@@ -1,0 +1,2 @@
+# azcogserv
+Azure Cognitive Services
