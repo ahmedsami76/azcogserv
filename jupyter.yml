@@ -9,5 +9,9 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - "./compviz:/home/jovyan/code"
+      - "./code:/home/jovyan/code"
       - "./data:/home/jovyan/data"
+    env_file:
+      - cs.env
+    command: ./entrypoint.sh
+
